@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.code.miraz.grpc;
+
+option java_multiple_files = true;
+option java_package = "com.code.miraz.grpc";
+
+service MahasiswaService {
+  rpc getMahasiswa(MahasiswaRequest) returns (MahasiswaResponse) {
+  }
+}
+
+message MahasiswaRequest {
+  string nim = 1;
+  string name = 2;
+}
+
+message MahasiswaResponse {
+  string nim = 1;
+  string name = 2;
+}

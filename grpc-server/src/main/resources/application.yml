@@ -1,0 +1,10 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: miraz-grpc-server
+
+grpc:
+  server:
+    port: 9191
